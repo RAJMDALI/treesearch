@@ -1,0 +1,32 @@
+package java;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class TupleTreeTest {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+        //sc.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+		List<String> input = new ArrayList<>();
+		
+		for (int i=0;i<n;i++)
+		{
+			input.add(sc.next());
+		}
+		
+		TupleTree tree = new TupleTree();
+
+		tree.convertArrToTreeNodes(input);
+		
+		System.out.println(tree.headNode.getValue());
+		
+		sc.close();
+		
+	}
+
+}
