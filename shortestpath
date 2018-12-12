@@ -1,0 +1,22 @@
+public String getShortestPathOfTupleTree()
+	{
+		if (null == headNode)
+		{
+			return null;
+		}
+		
+		Stack<Node> currentNodes = new Stack<>();
+		currentNodes.push(headNode);
+		
+		while (!currentNodes.isEmpty())
+		{
+			Node currentNode = currentNodes.pop();
+			/**
+			 * iterate all childs and maintain length
+			 * add childs as current Nodes  
+			 */
+		}
+		
+		
+		
+	} 
